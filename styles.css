@@ -1,0 +1,57 @@
+body{
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: rgb(255, 212, 0);
+  background-size: cover;
+}
+
+canvas{
+  border: 30px solid #e80000;
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  background: white;
+}
+
+button{
+  padding: 12px;
+  font-family:sans-serif;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+button:hover{
+  color:white;
+  background-color: red;
+}
+
+canvas.shake{
+  animation: shake 0.5s linear 1;
+}
+
+@keyframes shake{
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80%{
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70%{
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60%{
+    transform: translate3d(4px, 0, 0);
+  }
+}
